@@ -19,7 +19,7 @@
 						self.checkTransition();
 					});
 					$("#categoria").change(function() { 
-						valor = valor = $("#categoria option:selected").val();
+						valor = $("#categoria option:selected").val();
 						self.cargarProductos(valor);
 					});
 				});
