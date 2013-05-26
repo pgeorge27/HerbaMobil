@@ -44,12 +44,12 @@ footer .ui-btn-active{
 }
 
 .ui-li-thumb {
-max-height: 75px;
+	max-height: 75px;
 }
 
 .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit{
-min-height: 20px;
-padding-left: 100px;
+	min-height: 20px;
+	padding-left: 100px;
 }
 
 .imgLista{
@@ -67,7 +67,8 @@ padding-left: 100px;
 /* Header logo */
 .jqm-header h1.jqm-logo {
 	font-size: 1em;
-	margin: .6em 3.375em;
+	margin: .2em 3.375em;
+	margin-left: 20px;
 }
 
 .jqm-header .jqm-logo a {
@@ -78,7 +79,7 @@ padding-left: 100px;
 
 .jqm-header .jqm-logo img {
 	display: block;
-	width: 140px;
+	width: 200px;
 	height: auto;
 }
 
@@ -99,8 +100,8 @@ padding-left: 100px;
 }
 
 .ui-header>.ui-btn{
-display: inline-block;
-margin: 0px -13px 0px 0px;
+	display: inline-block;
+	margin: 0px -13px 0px 0px;
 }
 
 .jqm-header > .ui-btn,
@@ -108,6 +109,10 @@ margin: 0px -13px 0px 0px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+}
+
+#volver{
+	margin: 10px 0px 0px -12px;
 }
  
 /* Responsive */
@@ -137,7 +142,7 @@ margin: 0px -13px 0px 0px;
 @media (min-width:60em) {
 	/* Header */
 	.jqm-header h1.jqm-logo {
-		margin-left: 45%;
+		margin-left: 25%;
 	}
 	.jqm-header .jqm-navmenu-link {
 		left: 15%;
