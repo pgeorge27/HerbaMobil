@@ -13,12 +13,11 @@
 </head>
 <body>
 	<div data-role="page" data-theme="a" id="productos">
-		<header data-role="header" data-theme="a" data-position="fixed">
-			<h1>Herbamovil</h1>
+		    <div data-role="header" class="jqm-header" data-position="fixed">
+			<h1 class="jqm-logo"><a href="#productos"><img src="./imagenes/logo_herbamovil.png" alt="Herba Movil"></a></h1>
 			<a href="#add-form" data-icon="bars" id="icon" class="ui-btn-right"
 				data-iconpos="left">Menu</a>
-		</header>
-		<!-- /header -->
+	    </div><!-- /header -->
 
 		<select data-native-menu="false" id="categoria">
 			<option value="0">Ver todos</option>
@@ -27,20 +26,17 @@
 			<option value="3">Energ&iacute;a y condici&oacute;n f&iacute;sica</option>
 			<option value="4">Nutrici&oacute;n Externa</option>
 		</select>
-		<label id="test" for="select-choice-share">Share</label>
-            <select name="select-choice-share" id="select-choice-share" data-icon="forward" data-mini="true" data-iconpos="left" onchange="handleSocialShare()">
-                <option value="no">Share it</option>
-                <option value="facebook">Post this on Facebook</option>
-                <option value="twitter">Tweet this</option>
-                <option value="email">Email this</option>
-            </select>
 
 		<div data-role="content" >
+			
 			<ul id="listado-productos" data-role="listview" data-theme="a"
 				data-inset="true">
 			</ul>
-            <p><a href="#right-panel" data-role="button" data-theme="a" data-inline="true" data-mini="true" data-shadow="false">Compatir</a></p>
+
+            <p><a href="#right-panel" data-role="button" data-theme="a" data-inline="true"
+            data-mini="true" data-shadow="false">Compatir</a></p>
             <p><small>Informaci&oacute;n: www.herbalife.co.ve</small></p>
+
 		</div>
 		<!-- /content -->
 
@@ -53,9 +49,6 @@
 			id="add-form">
 			<ul data-role="listview" data-theme="a" class="nav-search">
 				<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
-				<!-- 				<li><a href="#">Accordion</a></li> -->
-				<li><a href="#"> <img src="./imagenes/twitter.png">
-						<h2>Interes</h2></a></li>
 				<li><a href="#acercaDe"> <img src="./imagenes/twitter.png">
 						<h2>Acerca De</h2>
 				</a></li>
@@ -96,14 +89,14 @@
 	</div>
 	<!-- /page -->
 
-	<div data-role="page" data-theme="b" id="detalles">
-		<header data-role="header" data-position="fixed">
-			<h1>Detalle</h1>
-			<a href="index.html" id="icon" data-role="button" data-icon="arrow-l">Volver</a>
+	<div data-role="page" id="detalles" data-theme="b" >
+
+		<div data-role="header" class="jqm-header" data-position="fixed">
+			<h1 class="jqm-logo"><a href="#productos"><img src="./imagenes/logo_herbamovil.png" alt="jQuery Mobile Framework"></a></h1>
+			<a href="index.html" id="volver" data-role="button" data-icon="arrow-l"></a>
 			<a href="#add-form" data-icon="bars" id="icon" class="ui-btn-right"
 				data-iconpos="left">Menu</a>
-		</header>
-		<!-- /header -->
+	    </div><!-- /header -->
 
 		<div data-role="content">
 			<h2 id="nombre-val" class="field">Titulo de prueba</h2>
@@ -112,18 +105,18 @@
 			</div>
 			
 			
-			<div data-role="collapsible" data-theme="b" data-content-theme="d" data-collapsed="false" >
+			<div data-role="collapsible" data-content-theme="d" data-collapsed="false" >
     <h4>Descripci&oacute;n</h4>
 
 			<div id="descripcion-val" class="field">Descripción de prueba</div>
 </div>
 
-<div id="contentSabores" data-role="collapsible" data-theme="b" data-content-theme="d"  >
+<div id="contentSabores" data-role="collapsible"  data-content-theme="d"  >
     <h4>Sabores</h4>
 <p id="sabores-val" class="field">n/a</p>
 </div>
 
-<div id="contentBeneficios" data-role="collapsible" data-theme="b" data-content-theme="d"  >
+<div id="contentBeneficios" data-role="collapsible" data-content-theme="d"  >
    <h4>Beneficios</h4>
 <p id="beneficios-val" class="field">n/a</p>
  </div>
@@ -139,41 +132,37 @@
 			id="add-form">
 			<ul data-role="listview" data-theme="a" class="nav-search">
 				<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
-				<!-- 				<li><a href="#">Accordion</a></li> -->
-				<li><a href="#"> <img src="./imagenes/blackberry_10.png">
-						<h2>Interes</h2></a></li>
-				<li><a href="#acercaDe"> <img src="./imagenes/lumia_800.png">
+				<li><a href="#acercaDe"> <img src="./imagenes/twitter.png">
 						<h2>Acerca De</h2>
 				</a></li>
 				<li><a href="https://www.facebook.com/Herbalife"> <img
-						src="./imagenes/facebook.jpg">
+						src="./imagenes/facebook.png">
 						<h2>FaceBook</h2>
 				</a></li>
 				<li><a href="https://twitter.com/herbalifesamcam"> <img
-						src="./imagenes/twitter.jpg">
+						src="./imagenes/twitter.png">
 						<h2>Twitter</h2>
 				</a></li>
 				<li><a href="http://www.youtube.com/user/HerbalifeIntl"> <img
-						src="./imagenes/youtube.jpg">
+						src="./imagenes/youtube.png">
 						<h2>Youtube</h2>
 				</a></li>
-				<li><a href="#contacto"> <img src="./imagenes/youtube.jpg">
+				<li><a href="#contacto"> <img src="./imagenes/email.png">
 						<h2>Contacto</h2>
 				</a></li>
 			</ul>
-		</div>
+		</div><!-- /panel -->
 		<!-- /panel -->
 	</div>
 	<!-- /page -->
 
 	<div data-role="page" data-theme="a" id="contacto">
-		<header data-role="header" data-position="fixed">
-			<h1>Contacto</h1>
-			<a href="index.html" id="icon" data-role="button" data-icon="home">Volver</a>
+		<div data-role="header" class="jqm-header" data-position="fixed">
+			<h1 class="jqm-logo"><a href="#productos"><img src="./imagenes/logo_herbamovil.png" alt="jQuery Mobile Framework"></a></h1>
+			<a href="index.html" id="volver" data-role="button" data-icon="arrow-l"></a>
 			<a href="#add-form" data-icon="bars" id="icon" class="ui-btn-right"
 				data-iconpos="left">Menu</a>
-		</header>
-		<!-- /header -->
+	    </div><!-- /header -->
 
 		<div data-role="content">
 			<div data-role="fieldcontain">
@@ -211,41 +200,34 @@
 			id="add-form">
 			<ul data-role="listview" data-theme="a" class="nav-search">
 				<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
-				<!-- 				<li><a href="#">Accordion</a></li> -->
-				<li><a href="#"> <img src="./imagenes/blackberry_10.png">
-						<h2>Interes</h2></a></li>
-				<li><a href="#acercaDe"> <img src="./imagenes/lumia_800.png">
+				<li><a href="#acercaDe"> <img src="./imagenes/twitter.png">
 						<h2>Acerca De</h2>
 				</a></li>
 				<li><a href="https://www.facebook.com/Herbalife"> <img
-						src="./imagenes/facebook.jpg">
+						src="./imagenes/facebook.png">
 						<h2>FaceBook</h2>
 				</a></li>
 				<li><a href="https://twitter.com/herbalifesamcam"> <img
-						src="./imagenes/twitter.jpg">
+						src="./imagenes/twitter.png">
 						<h2>Twitter</h2>
 				</a></li>
 				<li><a href="http://www.youtube.com/user/HerbalifeIntl"> <img
-						src="./imagenes/youtube.jpg">
+						src="./imagenes/youtube.png">
 						<h2>Youtube</h2>
 				</a></li>
-				<li><a href="#contacto"> <img src="./imagenes/youtube.jpg">
-						<h2>Contacto</h2>
-				</a></li>
 			</ul>
-		</div>
-		<!-- /panel -->
+		</div><!-- /panel -->
 	</div>
 	<!-- /page -->
 
 	<div data-role="page" id="acercaDe">
-		<header data-role="header" data-position="fixed">
-			<h1>Acerca De...</h1>
-			<a href="index.html" id="icon" data-role="button" data-icon="home">Volver</a>
+		<div data-role="header" class="jqm-header" data-position="fixed">
+			<h1 class="jqm-logo"><a href="#productos"><img src="./imagenes/logo_herbamovil.png" alt="jQuery Mobile Framework"></a></h1>
+			<a href="index.html" id="volver" data-role="button" data-icon="arrow-l"></a>
 			<a href="#add-form" data-icon="bars" id="icon" class="ui-btn-right"
 				data-iconpos="left">Menu</a>
-		</header>
-		<!-- /header -->
+	    </div><!-- /header -->
+	    
 		<div data-role="content">Herba Movil es una aplicacion</div>
 		<!-- /content -->
 
@@ -258,30 +240,23 @@
 			id="add-form">
 			<ul data-role="listview" data-theme="a" class="nav-search">
 				<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
-				<!-- 				<li><a href="#">Accordion</a></li> -->
-				<li><a href="#"> <img src="./imagenes/blackberry_10.png">
-						<h2>Interes</h2></a></li>
-				<li><a href="#acercaDe"> <img src="./imagenes/lumia_800.png">
-						<h2>Acerca De</h2>
-				</a></li>
 				<li><a href="https://www.facebook.com/Herbalife"> <img
-						src="./imagenes/facebook.jpg">
+						src="./imagenes/facebook.png">
 						<h2>FaceBook</h2>
 				</a></li>
 				<li><a href="https://twitter.com/herbalifesamcam"> <img
-						src="./imagenes/twitter.jpg">
+						src="./imagenes/twitter.png">
 						<h2>Twitter</h2>
 				</a></li>
 				<li><a href="http://www.youtube.com/user/HerbalifeIntl"> <img
-						src="./imagenes/youtube.jpg">
+						src="./imagenes/youtube.png">
 						<h2>Youtube</h2>
 				</a></li>
-				<li><a href="#contacto"> <img src="./imagenes/youtube.jpg">
+				<li><a href="#contacto"> <img src="./imagenes/email.png">
 						<h2>Contacto</h2>
 				</a></li>
 			</ul>
-		</div>
-		<!-- /panel -->
+		</div><!-- /panel -->
 	</div>
 	<!-- /page -->
 
