@@ -1,36 +1,26 @@
-function shareFacebookLike(url)
-{
-    window.location="http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
-}
-
-function shareTwitter(url, text)
-{
-    window.location = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
-}
-
-function shareEmail(subject, body)
-{
-    window.location = "mailto:&subject=" + subject + "&body=" + body;
-}
-
-text = "Usando HerbaMobil para Android, puedes bajarlo en: ";
-url ="http://www.prueba.com";
-
 $(document).ready(function() {
-	$("#test").click(function() {
-  		shareTwitter("2", "text");
-	});
+	$(".compartir").click(function() {
+		var share = new Share();
+		share.show({
+			subject: 'HerbaMovil',
+			text: 'Descarga HerbaMovil desde http://goo.gl/UgywXQ y disfruta de herbalife donde quiera que te encuentres.'},
+		    function() {}, // Success function
+		    function() {alert('Error al compartir')} // Failure function
 
-	$(".socialTwitter").click(function() {
-	  	shareTwitter(url, text);
-	});
+		    );
+	}); 
+	
+});
 
-	$(".socialFaceBook").click(function() {
-	  	shareFacebookLike(url);
-	});
-
-	$(".socialEmail").click(function() {
-	  	shareEmail(url, text);
-	});               
-
+$( document ).on( "pageinit", "#producto", function() {
+	$( document ).on( "swipeleft swiperight", "#producto", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+        	if ( e.type === "swipeleft"  ) {
+        		$( "#right-panel" ).panel( "open" );
+        	} 
+        }
+    });
 });
