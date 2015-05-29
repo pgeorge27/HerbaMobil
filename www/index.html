@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HerbaMovil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/filtro.css" />
+    <link rel="stylesheet" href="./css/jquery.mobile.structure-1.3.1.min.css" />
+    <link rel="stylesheet" href="./css/herbaMobil.css"/>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/funcionBd.js"></script>
+    <script type="text/javascript" src="js/productosBr.js"></script>
+    <script type="text/javascript" src="js/productosVnz.js"></script>
+    <script type="text/javascript" src="js/productosUsa.js"></script>
+    <script type="text/javascript" src="js/productosUsaEspanol.js"></script>
+    <script type="text/javascript" src="js/productosCa.js"></script>
+    <script type="text/javascript" src="js/productosChile.js"></script>
+    <script type="text/javascript" src="js/productosAruba.js"></script>
+
+</head>
+
+<body onload="self.init()">
+
+    <div data-role="page" data-theme="e" id="producto">
+        <header class="header" data-theme="e" data-role="header" data-position="fixed" data-toogle="false">
+            <h1 class="header">HerbaMovil</h1>
+        </header>
+
+        <div data-role="content" align="center">
+
+            <ul data-role="listview" data-inset="true" >
+                <li>
+                    <a data-ajax="false" href="./argentinaEspanol/index.html">
+                        <img src="./imagenes/menu/argentina.png" alt="Argentina">
+                        <h2>Argentina</h2>
+                        <p>Español</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./arubaEspanol/index.html">
+                        <img src="./imagenes/menu/aruba.png" alt="Aruba">
+                        <h2>Aruba</h2>
+                        <p>Español</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./brasilPortugues/index.html">
+                        <img src="./imagenes/menu/br.png" alt="Brasil">
+                        <h2>Brasil</h2>
+                        <p>Português</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./canadaIngles/index.html">
+                        <img src="./imagenes/menu/canada.png" alt="Canada">
+                        <h2>Canada</h2>
+                        <p>English</p>
+                    </a>
+                </li>
+                 <li>
+                    <a data-ajax="false" href="./chileEspanol/index.html">
+                        <img src="./imagenes/menu/chile.png" alt="Chile">
+                        <h2>Chile</h2>
+                        <p>Español</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./usaIngles/index.html">
+                        <img src="./imagenes/menu/usa.png" alt="United States" >
+                        <h2>United States</h2>
+                        <p>English</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./usaEspanol/index.html">
+                        <img src="./imagenes/menu/usa.png" alt="Estados Unidos" >
+                        <h2>Estados Unidos</h2>
+                        <p>Español</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-ajax="false" href="./venezuelaEspanol/index.html">
+                        <img src="./imagenes/menu/vnz.png" alt="Venezuela">
+                        <h2>Venezuela</h2>
+                        <p>Español</p>
+                    </a>
+                </li>
+            </ul>
+
+       </div>
+       <!-- /content -->
+   </div>
+   <!-- /page -->
+
+</body>
+</html>
